@@ -1,0 +1,52 @@
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  max-width: 600px;
+  margin: 80px auto;
+
+  /* dot grid bg */
+  background-color: #fdfdfd;
+  background-image: radial-gradient(#e1e1e1 1.25px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.box {
+  /* item alignment  */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  justify-content: center;
+  align-items: center;
+
+  /* box styling */
+  background: white;
+  padding: 60px;
+  box-shadow: 0 0 6px 1px rgba(10, 1, 53, 0.221);
+  border: 2px dashed rgb(170, 170, 170);
+  border-radius: 12px;
+}
+
+/* button styles */
+button {
+  background: #3784ff;
+  color: white;
+  border: 0px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  max-width: 120px;
+}
+
+button:hover {
+  background: #2e5fc8;
+}
+
+button:disabled {
+  background: #9b9b9b;
+  cursor: not-allowed;
+}
