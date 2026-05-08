@@ -16,9 +16,9 @@ async function handleUpload() {
 
     // user must select a file to upload
     if (!file)
-        return alert('Please select a file first.');
+        return alert('Please select a file first!');
 
-    // avoid collisions by adding timestamp to the stored file name
+    // avoid collisions --> prefix timestamp to filename
     const objectName = encodeURIComponent(`${Date.now()}_${file.name}`);
 
     setUploading(true);
