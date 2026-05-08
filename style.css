@@ -50,3 +50,30 @@ button:disabled {
   background: #9b9b9b;
   cursor: not-allowed;
 }
+
+/* status box styles*/
+#status {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  word-break: break-all; 
+}
+
+#status a {
+  color: #228df8;
+}
+
+.success {
+  background: #d7ffdb;
+  border: 2px solid #beedc3;
+  box-shadow: 0 0 6px 1px  rgba(10, 1, 53, 0.126);  
+  color: #3e3e3e;
+}
+
+.error {
+  background: #ffebee;
+  border: 2px solid #edcfd4;
+  box-shadow: 0 0 6px 1px  rgba(10, 1, 53, 0.126);
+  color: #b71c1c;
+}
+
