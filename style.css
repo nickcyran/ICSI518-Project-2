@@ -22,10 +22,10 @@ body {
   align-items: center;
 
   /* box styling */
-  background: white;
+  background: rgb(247, 247, 247);
   padding: 60px;
-  box-shadow: 0 0 6px 1px rgba(10, 1, 53, 0.221);
-  border: 2px dashed rgb(170, 170, 170);
+  box-shadow: 0 0 6px 1px rgba(10, 1, 53, 0.148);
+  border: 2px dashed rgb(202, 202, 202);
   border-radius: 12px;
 }
 
