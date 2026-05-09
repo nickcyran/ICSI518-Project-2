@@ -1,5 +1,5 @@
 // - [config] ---------------------------------------------------
-const API_BASE = location.hostname === 'localhost' ? '' : 'placeholder_for_backend_url';
+const API_BASE = location.hostname === 'localhost' ? '' : 'https://secure-upload-api-182043447480.us-central1.run.app';
 
 // - [references] -----------------------------------------------
 const fileInput = document.getElementById('fileInput');
