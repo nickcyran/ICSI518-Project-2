@@ -1,0 +1,14 @@
+{
+  "name": "icsi-518-project-2",
+  "version": "1.0.0",
+  "description": "Cloud-based secure file sharing using GCS signed URLs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.14.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  }
+}

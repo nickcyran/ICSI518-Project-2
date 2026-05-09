@@ -63,6 +63,19 @@ button:disabled {
   color: #228df8;
 }
 
+.dl-link {
+  display: inline-block;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom; 
+}
+
+small {
+  font-size: x-small;
+}
+
 .success {
   background: #d7ffdb;
   border: 2px solid #beedc3;
