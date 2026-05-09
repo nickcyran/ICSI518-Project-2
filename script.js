@@ -18,16 +18,17 @@ async function handleUpload() {
     if (!file)
         return alert('Please select a file first!');
 
-    // avoid collisions --> prefix timestamp to filename
-    const objectName = encodeURIComponent(`${Date.now()}_${file.name}`);
+    // uploaded files are stripped of their names
+    const extension = file.type.split('/')[1] || 'bin';
+    const objectName = encodeURIComponent(`${Date.now()}_${crypto.randomUUID()}.${extension}`);
 
     setUploading(true);
 
     try {
-        // upload the file to the Google Cloud service as raw bytes
+        // upload the file to the Google Cloud bucket as raw bytes
         const res = await fetch(`${UPLOAD_URL}?uploadType=media&name=${objectName}`, {
             method: 'POST',
-            headers: file.type ? { 'Content-Type': file.type } : {},
+            headers: { 'Content-Type': file.type },
             body: file,
         });
 
