@@ -22,7 +22,7 @@ async function handleUpload() {
         const contentType = file.type || 'application/octet-stream';
 
         // 1. get upload url from the backend
-        const { uploadUrl, objectName } = await postJSON('/api/get-upload-url', { contentType });
+        const { uploadUrl, objectName } = await postJSON('/api/get-upload-url', { contentType, fileName: file.name });
 
         // 2. upload the file to the Google Cloud Storage bucket
         const putRes = await fetch(uploadUrl, {

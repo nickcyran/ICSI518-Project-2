@@ -60,3 +60,16 @@ The initial implementation lacked any security features. While the program worke
 | `POST /api/get-download-url` | `{ objectName }` | `{ downloadUrl }` - signed GET URL, 7 days |
 
 ---
+## Supported File Types
+All major file types work!
+
+| Category | Examples |
+|---|---|
+| Images | `.png`, `.jpg`, `.gif`, `.webp`, `.svg` |
+| Documents | `.pdf`, `.docx`, `.xlsx`, `.pptx` |
+| Text & code | `.txt`, `.md`, `.json`, `.js`, `.py`, `.html` |
+| Archives | `.zip`, `.rar`, `.7z` |
+| Audio & video | `.mp3`, `.mp4`, `.mov`, `.wav` |
+| Executables | `.exe`, `.msi`, `.deb` |
+
+_**NOTE:** Files with no extension are stored as `.bin`._
