@@ -27,7 +27,7 @@ app.post('/api/get-upload-url', async (req, res) => {
         return res.status(400).json({ error: 'contentType required' });
 
     // generate a unique filename for the object
-    const ext = (contentType.split('/')[1] || 'bin');   // get file extension (default to bin)
+    const ext = (fileName?.split('.').pop() || 'bin').replace(/\W/g, '').toLowerCase();   // get formatted file extension (default to bin)
     const objectName = `${Date.now()}_${crypto.randomUUID()}.${ext}`;   // avoid collision w timestamp
 
     // sign a put url (valid for 15 min)
