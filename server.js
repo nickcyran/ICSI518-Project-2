@@ -22,7 +22,7 @@ const bucket = new Storage().bucket(BUCKET_NAME);
 // - [routes] ---------------------------------------------------
 // get signed url to upload a file
 app.post('/api/get-upload-url', async (req, res) => {
-    const { contentType } = req.body;
+    const { contentType, fileName } = req.body;
     if (!contentType) 
         return res.status(400).json({ error: 'contentType required' });
 
